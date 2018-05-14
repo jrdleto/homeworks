@@ -1,0 +1,19 @@
+* {
+    background-color: lightblue;
+}
+.center {
+    text-align:center;
+}
+#header2 {
+    text-align: center;
+    font-weight: normal;
+
+}
+.right {
+    text-align: right;
+    font-weight: bold;
+}
+#header3 {
+    text-align: center;
+    color:red;
+}
