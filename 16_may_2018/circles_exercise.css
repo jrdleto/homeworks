@@ -1,0 +1,63 @@
+.red {
+    cursor: pointer;
+  width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+}
+.blue {
+    cursor: pointer;
+ width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+}
+.yellow {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: inline-block;
+}
+.black {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+}
+.pink {
+    cursor: pointer;
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: pink;
+    display: inline-block;
+}
+.square {
+    cursor: pointer;
+  width: 400px;
+    height: 800px;
+    border: 1px solid black;
+    background-color: violet;
+}
+
+.pink:hover ~ .square {
+    background-color: pink;
+}
+.blue:hover ~ .square {
+    background-color: blue;
+}
+.black:hover ~ .square {
+    background-color: black;
+}
+.red:hover ~ .square {
+    background-color: red;
+}
+.yellow:hover ~ .square  {
+    background-color: yellow;
+}

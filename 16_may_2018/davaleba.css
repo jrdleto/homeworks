@@ -1,0 +1,31 @@
+.header {
+    border: 8px darkblue;
+    display: block;
+    border-style: ridge;   
+    padding: 13px;
+    width: 50%;
+     margin-left: auto ;
+     margin-right: auto;
+     background-color: blue;
+     color: white;
+}
+.main {
+    border: solid 40px darkgoldenrod;
+  
+     background-color: brown;
+     width: 30%;
+     padding: 20px 10px;    
+     margin-left: auto ;
+     margin-right: auto;
+     display: block;
+}
+.footer {
+    border: 10px darkblue;
+    display: block;
+    border-style: ridge;   
+    padding: 13px;
+    width: 50%;
+    margin: 0px auto 0px auto;
+     background-color: blue;
+     color: white;
+}

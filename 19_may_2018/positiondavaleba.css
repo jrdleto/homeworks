@@ -1,0 +1,78 @@
+div.h1 {
+    display:inline-block;
+    margin-left: auto;
+    margin-right: 50px;
+}
+div.relative{
+    border: 1px solid #000;
+    height:400px;
+    width:400px;
+    background-color: gainsboro;
+    position: relative;
+  }
+div.a {
+    border: 1px solid grey;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    bottom: 0px;
+    right: 0px;
+    background-color:grey;  
+}
+div.example {
+    border: 1px solid #000;
+    height:400px;
+    width:400px;
+    background-color: grey;
+    position: relative;
+  }
+div.example2 {
+    border: 1px solid grey;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    background-color: gainsboro;
+}
+div.example3 {
+    border: 1px solid grey;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    background-color: #444;
+   
+
+}
+div.home1 {
+    border: 1px solid #000;
+    height:400px;
+    width:400px;
+    background-color: grey;
+    position: relative;
+}
+div.home2 {
+    border: 1px solid grey;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    background-color: gainsboro;
+}
+div.home3 {
+    border: 1px solid grey;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    background-color: #444;
+}
