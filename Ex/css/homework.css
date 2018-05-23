@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+   header {
+    padding: 30px 5px;
+    color: white;
+  } 
+  .container {
+      height: 120px;
+      width: 95%;
+      margin: 0 auto;
+      background: grey;
+     
+  } 
+  .nav {
+    float:left;
+    margin-top: 60px;
+  }
+  .nav ul li {
+      background: blue;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      width: 200px;
+ 
+  }
+  .nav ul li a {
+    text-decoration:none;
+    color: white;
+  }
+  footer {
+      clear: both;
+      background: grey;
+      width: 1200px;
+      width: 95%;
+      color: white;
+      padding: 30px 5px;
+
+  }
+  .main-content {
+      margin: 60px 18%;
+      font-size: 20px;
+  }
+  

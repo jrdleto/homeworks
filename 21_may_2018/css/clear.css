@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 24.5%;
+    height: 200px;
+    background-color: yellowgreen;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.clearfix::after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+}
+
