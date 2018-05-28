@@ -1,6 +1,6 @@
 div {
     height: 150px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .grad_1{
     background-image: linear-gradient(blue, lightblue);
@@ -21,7 +21,7 @@ div {
 .grad_6 {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     text-align: center;
-    color: #888;
+    color: #333;
     font-size: 40px;
     font-weight: bold;
     line-height: 3em;
