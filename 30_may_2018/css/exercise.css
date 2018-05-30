@@ -1,0 +1,67 @@
+body {
+    background: greenyellow;   
+    max-width: 1200px;
+}
+h1 {
+    font-size: 10px;
+
+}
+h2,  p {
+    font-size: 30px;
+
+}
+figcaption {
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+   
+
+
+}
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.fux {
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+figure {
+  
+margin-right: 5px;
+}
+figure > * {
+    flex:1 33.33%
+}
+@media all and (min-width: 500px){
+    body {
+        background: orange;
+        margin: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2,  p {
+        font-size: 15px;
+    }
+
+}
+
+@media all and (min-width: 700px) {
+    body {
+       
+        background: red;
+        margin-left:10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2, p {
+        font-size: 19px;
+    }
+}
