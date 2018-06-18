@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js 101
+    </title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">  BOX
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- <script> getName();</script> -->
+<script>
+//  function pow(x, n){
+//     let result = x ;
+//     for ( i=1; i<n; i++){
+//         x = x * result;
+//     }
+//     return x;
+// }
+// let sum = pow(5 , 3);
+// alert(sum);
+//  let x = Number(prompt("enter ur number"));
+//  function isPrime(x){
+//      if(x == 2) {
+//          return true;
+//      }
+//      if(x==1) {
+//          return false;
+//      }
+//      for( i = 2; i < x; i++){
+//              if(x% i ==0){
+//                  return false;
+//              }
+//             }
+// }
+//             return true;
+             
+     
+ 
+
+//  for(let z = 1; z <= x; z++){
+//      if(isPrime(z)){
+//          console.log(z)
+//      }
+//  }
+ 
+
+// function ask(question, yes, no){
+//     if(confirm(question)){
+//         yes()
+//     }
+//     else {
+//         no();
+//     }
+// }
+// function showOkay(){
+//     alert("you agreed");
+// }
+// function showCancel(){
+//     alert("You Canceled");
+// }
+// ask("Areu okay?", showOkay, showCancel);
+
+
+
+// (arg1,arg2,arg3, .... argN) =>     {}
+// let f = (arg1,arg2,arg3 .... argN) => {}
+function sq(n){
+    return n * 2;
+}
+let sq2 = function(){
+    return n * 2;
+}
+let sq3 = n => n * 2;
+
+let say = (x) => alert(x);
+say("hello my friend");
+ask (
+    "do u agree?",
+    () => alert("you agreed"),
+    () => alert("you canceled")
+)
+</script>
+</body>
+</html>
