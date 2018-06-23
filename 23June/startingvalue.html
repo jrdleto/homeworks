@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = 5; 
+    let single = " single";
+    let double = " double";
+    let backticks = "backticks";
+    console.log('my ' + num +  single);
+    console.log('my ' + num +  double);
+    console.log(`my ${num} ${single}`);
+    
+   let str = "Hello from the other side. yep";
+
+    for(let char of str){
+        console.log(char);
+    }
+    str[0] = 'h';
+    console.log(str);
+
+    console.log("uppercase".toUpperCase());
+    console.log("LOWERCASE".toLowerCase());
+    console.log("uppercase"[0].toUpperCase());
+
+    console.log(str.lastIndexOf('.'));
+
+    let target = "the";
+    let pos = 0;
+
+    while(true) {
+        let foundPos = str.indexOf(target, pos);
+        if(foundPos == -1 ) break;
+
+        console.log(`Found at ${foundPos}`);
+        pos = foundPos + 1;
+    }
+
+    console.log()
+
+
+    
+    </script>
+</body>
+</html>
