@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href=""></a>
+    <script>
+    /*
+     DOCUMENT_NODE - window.document/document
+     ELEMENT_NODE - <body>, <a>, <p> ....
+    ATTRIBUTE_NODE = class="sad"
+    TEXT_NODE - nebismieri dashoreba failshi
+    DOCUMENT_TYPE_NODE - <!Doctype HTML>
+    DOCUMENT_FRAGMENT_NODE - document.createDocumentFragment()
+    */
+
+    // console.log(Node.ELEMENT_NODE);
+    // console.log(Node.ATTRIBUTE_NODE);
+    // console.log(Node.TEXT_NODE);
+   // Object > Node > Element >  HTML*Element
+   let nodeAnchor = document.querySelector('a'); // airchevskvela <a>-s
+    let props = [];
+
+    for(let key in nodeAnchor) {
+        props.push(key);
+    }
+    console.log(props.sort());
+
+    /*
+
+    Node properties:
+    childNodes
+    firstChild
+    lastChild
+    nextSibling
+    previousSibling
+    nodeName
+    nodeType
+    nodeValue
+    parentNode
+
+    Node Methods:
+       appendChild(node);
+       cloneNode();
+       contains(node);
+       hasChildNodes();
+       insertBefore(node);
+       isEqualNode();
+       removeChild(node);
+       replaceChild(node);
+
+       Document Methods:
+          document.createElement('tag');
+          document.createTextNode(`string`);
+      
+    Html*Element Properties: 
+         innerHTML
+         outerHTML
+         textContent
+         innerText
+         outerText
+         firstElementChild
+         lastElementChild
+         nextElementchild
+         previousElementChild
+         children
+
+    */
+
+    </script>
+</body>
+</html>

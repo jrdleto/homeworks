@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+
+
+    // generateHTML(count, tagName, selector);
+     
+    // let generateHTML = function(count1, tagName1, parentSelector1, content1, childCount, childElement){
+     
+    //     this.parentSelector1 = document.querySelector('#container');
+    //     this.tagName1 = document.getElementsByTagName("#para"); 
+    //     this.content1 = document.createTextNode('Text content');
+        
+
+        
+
+    // }
+    function addElement (){
+        let newDiv = document.createElement("div");
+        let newContent = document.createTextNode("Hi there and greetings");
+        newDiv.appendChild(newContent);
+
+        let currentDiv = document.getElementById("div1");
+        document.body.insertBefore(newDiv, currentDiv);
+    }
+    </script>
+     <!-- <div id='container'>
+    <p id='para'></p>
+    </div>
+    
+    let elementNode = document.createElement('strong');
+    let elementText = document.createTextNode('Georgia');
+    
+    let containerDiv = document.querySelector('#container');
+    let p = document.querySelector('#para');
+    
+    p.appendChild(elementNode);
+    elementNode.appendChild(elementText);
+
+    console.log(document.body.innerHTML); -->
+    <!-- <div id="container">
+        <p id="para"></p>
+    </div> -->
+</body>
+</html>

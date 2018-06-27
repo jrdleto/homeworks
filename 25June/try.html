@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let operation = {
+
+    }   
+     function Calculator() {
+      this.calculate = function(str){
+          let split = str.split(" ");
+          let a = parseInt(str[0]);
+          let b = parseInt(str[2]);
+          for( let oper in operation){
+              if(split[1] == oper){
+                  return operation[oper](a,b);
+              }
+            }
+              if(split[1] == "-"){
+                  this.value = a - b;
+              }
+              else if (split[1] == "+"){
+                 this.value = a + b;
+              }
+          
+
+          this.addOperator = function (name ,func){
+              operation[name] = func;
+          }
+      }
+
+
+
+
+    } 
+    let calculator  = new Calculator();
+    calculator.calculate("3 + 3");
+     alert(calculator.value);
+    // powerCalc.addOperator("*", (a, b) => a * b);
+    // powerCalc.addOperator("/", (a, b) => a / b);
+    // powerCalc.addOperator("**", (a, b) => a ** b);
+    // let result = powerCalc.calculate("2 ** 3");
+    // alert(result);
+        
+    </script>
+</body>
+</html>

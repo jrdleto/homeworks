@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let str = "my string example";
+     console.log(str.includes('my'));
+
+     console.log(str.startsWith("my"));
+     console.log(str.endsWith("string"));   
+
+     let arr = [1,2,3];
+     let clone = arr;
+     console.log(clone == arr);
+
+     let sliced = str.slice(3,7);
+     console.log(`slice ${sliced}`);
+
+     let subString = str.substring(0,6);
+     console.log(`substring is : ${subString}`)
+
+     let subStr = str.substr(0,4);
+     console.log(`substr is : ${subStr}`);
+    </script>
+</body>
+</html>
