@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    /*
+    Date
+    new Date()
+    new Date(milliseconds)
+    new Date(datestring)
+    new Date(year, month, date, hours, minutes, seconds, ms)
+    */
+    // let now = new Date();
+    // console.log(now);
+    // // UTC
+    // //1970 1 Jan
+    // let start = new Date(0);
+    // console.log(start);
+
+
+
+
+    // let fromString = new Date('2018-06-30');
+    // console.log(fromString);
+
+    // let fromConst = new Date(2018, 6, 30, 14, 33, 49, 10);
+    // console.log(fromConst);
+    // console.log(fromConst.getFullYear());
+    // console.log(fromConst.getMonth());
+    // console.log(fromConst.getDate()+1);
+    // console.log(fromConst.getHours());
+
+    // let old = Date.now();
+    // let i = 0;
+    // while ( i < 100000000 ) {
+    //     i++;
+    // }
+    // let current = Date.now();
+
+    // console.log()
+
+     function getSecondToTomorrow(){
+         let now = new Date();
+         let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+         let dayAfterTomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+2);
+         console.log(tomorrow);   
+         console.log(dayAfterTomorrow);
+         let second = tomorrow - now;
+         return Math.round(second / 1000);
+
+         let after = dayAfterTomorrow - now;
+         return Math.round(after / 1000);
+
+    
+     }
+    
+     console.log(`Elapsed time is ` + getSecondToTomorrow() + ` .`);
+    //  console.log(getSecondToTomorrow(second1));
+    </script>
+</body>
+</html>

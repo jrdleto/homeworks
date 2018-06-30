@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    let nums = [2,4,5,6,7,8,9];
+      
+    let users = [
+        {id: 1, name: "Gela"},
+        {id: 2, name: "John"},
+        {id: 3, name: "Jimesheri"},
+        {id: 4, name: "32"},
+        {id: 5, name: "ann"}
+    ]
+    function compare(a,b){
+        if(a > b) return 1;
+        if ( a == b) return 0 ;
+        if(a < b) return -1;
+    }
+    // console.log(num.sort(compare));
+    // console.log(num.sort((a,b) => { return a - b;}));
+    let foundUser = users.find(user => user.id == 2);
+    let filtered = users.filter( user => user.id < 5);
+    // console.log(foundUser);
+    console.log(filtered);
+   
+//    let doubled = nums.map((number, index, arr) => {
+//          return number * 2;
+//    });
+//    let html = users.map(user =>{
+//      return `
+//      <div class="user"> 
+//            <h2 class="title"> ${user.name} <small>Id - ${user.id} </small></h2> 
+     
+//      </div>
+//      `;
+//    });
+//    console.table(doubled);
+//    console.table(html);
+//    document.body.innerHTML = html.join("");  // join shlis mdzimeebs am shemtxvevashi
+     
+    </script>
+</body>
+</html>

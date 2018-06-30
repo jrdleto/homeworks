@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // function* generator(){
+        //     yield "h"
+        //     console.log("h");
+        //     yield "e"
+        //     console.log("e");
+        //     yield "l"
+        //     console.log("l");
+        //     yield "l"
+        //     console.log("l");
+        //     yield "o"
+        //     console.log("o");
+
+        // }
+
+        // let g = generator();
+        // console.log(typeof g[Symbol.iterator] === 'function');
+
+        // console.log(typeof g.next() === 'function');
+
+        // console.log(g[Symbol.iterator]() === g);
+        // console.log([...g])
+        // for( let char of g){
+            // console.log(char)
+        // };
+        // let rangeCount ={
+        //     start: 1,
+        //     end: 13
+        // }
+        // rangeCount[Symbol.iterator] = function(){
+        //     return{
+        //         current: this.start,
+        //         last: this.end,
+        //         next(){
+        //             if( this.current < this.last){
+        //                 return{                                                            
+        //                     done:false,
+        //                     value: this.current++
+        //                 }
+        //             }
+        //             else {
+        //                 return { done: true};
+        //             }
+        //         }
+        //     }
+        // }
+        // for( let num of rangeCount){
+        //     console.log(num);
+        // }
+       let set = new Set();
+
+       /* 
+       set.add();
+       set.has();
+       set.delete();
+       set.clear()
+       set.size()
+
+
+       */
+       set.add(5).add(1).add(8).add(1)
+       console.log(set);
+        //keys, values, entries < iteratorebia samive
+    //    console.log(set.keys());
+    //    for( let key of set.keys()){
+    //        console.log(key);
+    //    }
+    //    console.log(set.values());
+   
+        //    for( let entry of set.entries()){
+        //        console.log(entry);
+        //    }
+       
+       for( let value of set.values()){
+           console.log(value);
+       }
+     for ( let [key,value] of set.entries()){
+         console.log(key,value);
+     }
+
+    </script>
+</body>
+</html>

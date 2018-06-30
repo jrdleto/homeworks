@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+    
+ 
+     let values = ["John", "John", "David", "David", "Jano"];
+     let uniqueArr = [];
+     for(let i = 0; i< values.length; i++){
+         let member = values[i];
+         if(uniqueArr.indexOf(member) == -1)
+         {
+             uniqueArr.push(member);
+         }
+     }
+
+     console.log("uniques Are : " + uniqueArr);
+
+    let mixedStr = ["A", "O", "A", "J"];
+
+    let uniqueStr = mixedStr.filter( (value, index) =>{
+        return mixedStr.indexOf(value) == index;
+    } );
+
+    let tmp = [];
+    for ( item of mixedStr){
+        if(! tmp.includes(item)) {
+            tmp.push(item);
+        }
+    }
+    console.log(uniqueStr);
+    console.log(tmp);
+    </script>
+</body>
+</html>

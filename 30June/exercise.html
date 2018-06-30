@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let john = { name: "John", age: 25};
+    let adam = { name: "Adam", age: 30};
+    let mary = { name: "Mary", age: 28};
+    let aaron = {name:"Aaron", age: 31};
+
+    let arr = [ john, adam, mary, aaron];
+
+    function compare(strA, strB) {
+         if(strA.name < strB.name){
+             return -1;
+         }
+         if(strA.name > strB.name)
+         return 1;
+         return 0;
+    }
+    // function sortByName(x) {
+    //     x.sort(compare);
+    // };
+    console.table(arr.sort(compare));
+    // alert(arr[0].name);
+
+
+    </script>
+</body>
+</html>

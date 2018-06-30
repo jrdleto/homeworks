@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    let myMap = new Map();
+ 
+ // map.set()
+ // map.get()
+
+    myMap.set(1, "one");
+    myMap.set(2, "two");
+    myMap.set(false, 0 );
+    myMap.set(true, 1);
+    myMap.set({name: "John"}, "User");
+    // console.log(myMap.keys());
+    // console.table(myMap);
+    // for(let key of myMap.keys()){
+    //     console.log(key);
+    // }
+    // for(let value of myMap.values()){
+    //     console.log(value);
+    // }
+    // for(let entry of myMap.entries()){
+    //     console.log(entry);
+    // }
+    for( let [key, value] of myMap.entries()){
+        console.log(key,value);
+    }
+
+    let prices = new Map([
+        [`banana`, 5],
+        [`apple`, 4],
+        [`kiwi`, 4],
+    ]);
+
+    console.log(prices);
+  
+    let fromObj = new Map(Object.entries({
+        name: "john",
+        age: 40,
+        stressed: true
+    }));
+
+    console.log(fromObj);
+    </script>
+</body>
+</html>
