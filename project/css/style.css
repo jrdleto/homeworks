@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+body{
+    background-color: gray;
+}
+.header{
+    max-width: 15rem;
+    background: rgba(188, 193, 206, 0.3);
+    min-height: 100vh;
+
+
+}
+.main{
+    display: flex;
+}
+.statistic-main{
+    color: rgba(29, 33, 36, 0.24);
+    font-size: 25px;
+    padding: 10px;
+}
+.statistic{
+    font-size: 15px;
+    padding: 10px;
+}
+.statistic a{
+    margin-left: 10px;
+}
+.copyright{
+    display: inline-block;
+    padding: 10px;
+}
+.copyright h3 {
+         margin-top: 250px;
+         color: blue;
+          }
+.copyright p {
+    color: rgba(13, 81, 90, 0.3)
+}
+.wrapper{
+    display: flex;
+    width: 30rem;
+    background-color:rgba(223, 226, 235, 0.3);
+    margin-left: 10px;
+    margin-top: 5rem;
+}
+.wrapper #add{
+    background-color: #4CAF50;;
+}
+.wrapper .remove{
+    background-color: red;
+}
+.wrapper .update{
+    background-color: blue;
+}
+.wrapper .update a{
+    color:white;
+    text-decoration:  none;
+}
+.name{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 120%;
+    min-height: 25px;
+    min-width: 50px;
+}
+.average {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 120%;
+    min-height: 25px;
+    min-width: 50px;
+  }
+.boxName{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+.boxNameK{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+  #map{
+      display: flex;
+      width: auto;
+      max-height: 50px;
+  }
+  #article {
+      display: grid;
+      margin: 10px;
+      grid-gap: 10px;
+      /* grid-auto-flow: column; */
+      grid-template-columns: 200px;
+      order: 1;
+  
+  
+  }
+  #average{
+      display: grid;
+      margin: 10px;
+      grid-gap: 10px;
+      /* grid-auto-flow: column; */
+      grid-template-columns: 100px;
+      order: 2;
+      text-align: center;
+  }
+  #average .average{
+    background-color: blue;
+  }
+
+#addDay{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px;
+    order: 3;
+    margin-top: 10px;
+    margin-left: 5px;
+  
+}
