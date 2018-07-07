@@ -1,6 +1,6 @@
-
-
 let date = new Date(2018, 3, 30);
+
+
 
 
 function addDay(){
@@ -20,23 +20,23 @@ for(let i = 0; i < 1; i++) {
 
   
 if(date.getDate() == 30) {
-  childDiv.textContent = date;
+  childDiv.textContent = date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,' ');
   date.setDate(date.getDate()+2);
 }
   else if(date.getDay() == '1') {
-  childDiv.textContent = date;
+  childDiv.textContent = date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,' ');
   date.setDate(date.getDate()+2);
 }
  else if(date.getDay() == '3'){
-    childDiv.textContent = date;
+    childDiv.textContent = date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,' ');
    date.setDate(date.getDate()+2);
   }
   else if(date.getDay() == '5'){
-    childDiv.textContent = date;
+    childDiv.textContent = date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,' ');
    date.setDate(date.getDate()+1);
   }
     else if(date.getDay() == '6'){
-    childDiv.textContent = date;
+    childDiv.textContent = date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,'   ');
    date.setDate(date.getDate()+2);
   }
 }
@@ -82,6 +82,7 @@ function remove(){
      
     }
   };
+
 function check(){
   let box = document.getElementsByClassName('boxName');
   for(let i = 0; i < box.length; i++){
@@ -93,6 +94,7 @@ function check(){
     }
   }
 }
+
 function event1(event){
     let input = prompt("enter");
     if(input > 5){
@@ -112,6 +114,7 @@ function event1(event){
       event.target.style.backgroundColor = "green";
     }     
   }
+
 function yes(){
 
   let box = document.getElementsByClassName("boxName")  
@@ -148,13 +151,13 @@ function update(){
          anotherSum = anotherSum + Number(element[i].textContent);
        }
        
-       anotherResult = Math.floor(anotherSum / element.length);
+       anotherResult = (anotherSum / element.length).toFixed(2);
        let final = document.getElementsByClassName('averageMark');
        final[0].innerHTML = anotherResult;
       
        
     let vat = [];
-    let oho = document.getElementsByClassName('boxNameK')
+    let content = document.getElementsByClassName('boxNameK')
     for( i = 0; i < 8; i++){
     let innerSum = Array.from(
         document.getElementsByClassName(`boxName${i}`)
@@ -172,10 +175,8 @@ function update(){
         }
     }
     for(let i = 1; i < 8; i++){
-        average[i].appendChild(document.createTextNode((parseFloat(vat[i-1])/oho.length).toFixed(1)));
+        average[i].appendChild(document.createTextNode((parseFloat(vat[i-1])/content.length).toFixed(1)));
      }
-
-
     }
  
     

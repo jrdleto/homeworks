@@ -1,3 +1,6 @@
+*, ::after, ::before {
+    box-sizing: initial;
+}
 *{
     margin:0;
     padding:0;
@@ -41,21 +44,43 @@ body{
 .copyright p {
     color: rgba(13, 81, 90, 0.3)
 }
+.wrapper1{
+    display:flex;
+}
+#container{
+    float:left;
+width:1200px;
+overflow: auto;
+}
 .wrapper{
     display: flex;
+    justify-content: space-between;
     width: 30rem;
     background-color:rgba(223, 226, 235, 0.3);
     margin-left: 10px;
     margin-top: 5rem;
 }
+
 .wrapper #add{
     background-color: #4CAF50;;
+    width: 80px;
+    height: 50px;   
+    font-size: 20px;
+    margin-left: 10px;
 }
 .wrapper .remove{
     background-color: red;
+    width: 80px;
+    height: 50px;   
+    font-size: 20px;
+    margin-left: 10px;
 }
 .wrapper .update{
     background-color: blue;
+    width: 80px;
+    height: 50px;   
+    font-size: 20px;
+    margin-left: 10px;
 }
 .wrapper .update a{
     color:white;
@@ -95,7 +120,7 @@ body{
     padding: 20px;
     min-height: 25px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
   #map{
