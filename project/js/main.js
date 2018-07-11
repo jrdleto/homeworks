@@ -1,8 +1,5 @@
 let date = new Date(2018, 3, 30);
 
-
-
-
 function addDay(){
   {
       let divi = document.createElement('div');
@@ -63,7 +60,7 @@ function remove(){
   
   if(date.getDay() == '1') {
      date.setDate(date.getDate()-2);
-    childDiv.textContent = date;
+    childDiv.tex0tContent = date;
    
   }
    else if(date.getDay() == '3'){
