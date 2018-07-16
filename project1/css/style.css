@@ -1,0 +1,266 @@
+*, ::after, ::before {
+    box-sizing: initial;
+}
+*{
+    margin:0;
+    padding:0;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+body{
+    background-color: #7FDBFF;
+    overflow-y: hidden;
+}
+.header{
+    max-width: 15rem;
+    background:  #7FDBFF;
+    min-height: 100vh;
+
+
+}
+#container{
+    overflow-y: hidden;
+}
+.main{
+    display: flex;
+}
+.statisticMissed{
+    font-size: 15px;
+    padding: 10px;
+}
+.statistic-main{
+    color: rgba(29, 33, 36, 0.24);
+    font-size: 25px;
+    padding: 10px;
+}
+.statistic{
+    font-size: 15px;
+    padding: 10px;
+}
+.statistic a{
+    margin-left: 10px;
+}
+.copyright{
+    display: inline-block;
+    padding: 10px;
+}
+.copyright h3 {
+         margin-top: 250px;
+         color:  #39cccc;
+
+
+          }
+.copyright p {
+    color: #fff
+}
+.wrapper1{
+    display:flex;
+}
+#container{
+
+    float:left;
+width:1200px;
+overflow: auto;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    background-color:rgba(223, 226, 235, 0.3);
+    margin-left: 10px;
+    margin-top: 5rem;
+}
+
+.wrapper #add{
+    background-color: red;;
+    width: 80px;
+    padding: 4px 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.wrapper .remove{
+    background-color: green;
+    width: 80px;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.wrapper .update{
+    background-color: blue;
+    width: 80px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.wrapper .update a{
+    color:white;
+    text-decoration:  none;
+}
+.name{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 120%;
+    min-height: 25px;
+    min-width: 50px;
+}
+.average {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 120%;
+    min-height: 25px;
+    min-width: 50px;
+  }
+.boxName{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+.boxNameK{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+  #map{
+      display: flex;
+      justify-content: flex-start;
+      width: auto;
+      max-height: 50px;
+  }
+  #article {
+      display: grid;
+      margin: 10px;
+      grid-gap: 10px;
+      grid-template-columns: 200px;
+      order: 1;
+  
+  
+  }
+  #average{
+      display: grid;
+      margin: 10px;
+      grid-gap: 10px;
+    
+      grid-template-columns: 100px;
+      order: 2;
+      text-align: center;
+  }
+  #average .average{
+    background-color: blue;
+  }
+
+#addDay{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px;
+    order: 3;
+    margin-top: 10px;
+    margin-left: 5px;
+  
+}
+
+@media screen and (max-width: 1200px){
+    *, ::after, ::before {
+        box-sizing: initial;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        display:grid;      
+        max-width: 980px;  
+        overflow-y: hidden;
+    }
+   .wrapper{
+    margin-top: 0px;
+    max-height: 35px;
+    max-width: 30rem;
+   }
+  
+   .wrapper1 #add{
+       background-color: #85144b;
+       font-size: 15px;
+       overflow: hidden;
+      
+   }
+
+   .wrapper1 .remove{
+    font-size: 15px;
+    overflow: hidden;
+   
+   }
+   .wrapper1 .update{
+       font-size: 15px;
+   }
+   .copyright{
+       display:none;
+   }
+   .statistic{
+       font-size: 20px;
+       /* margin-top: 20px; */
+   }
+   .statisticMissed{
+       font-size: 20px;
+   }
+
+   #article .name {
+       max-width: 120px;
+       font-size: 15px;
+       background: #39cccc;
+   }
+   #map{
+    display: flex;
+    justify-content: flex-start;
+    max-height: 50px;
+}
+#average{
+    margin-left: -40px;
+    max-height: 10px;
+}
+#average .average{
+    font-size: 15px;
+}
+#addDay .boxNameK{
+    font-size: 15px;
+}
+#addDay .boxName{
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 600px){
+    *, ::after, ::before {
+        box-sizing: initial;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        display:grid;      
+        max-width: 600px;  
+        overflow-y: hidden;
+    }
+    .statistic-main{
+        display: none;
+    }
+    .statistic{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+ 
+}
