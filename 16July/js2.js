@@ -49,20 +49,24 @@ class Book extends Product {
     static compare(productX, productY){
         return productX.price - productY.price;
     }
+    static num(productK, productN){
+        return productK.pubDate - productN.pubDate;
+    }
 
 }
 
 let books = [
-    new Book(1, "book", 30, "Dorian Gray", new Date(2016,30,2).toDateString()),
+    new Book(1, "book", 30, "Dorian Gray", new Date(2016,3,1).toDateString()),
     new Book(2, "book", 40, "Javascript Intro", new Date(2016,1,2).toDateString()),
-    new Book(3, "book", 15, "Python Intro", "10July"),
+    new Book(3, "book", 15, "Python Intro", new Date(2016,2,1).toDateString()),
 ]
 
 // books[0].print();
 // books[1].print();
 // books[2].print();
 books.sort(books.compare);
-console.table(books.sort(Book.compare))
+console.table(books.sort(Book.compare));
+console.table(books.sort(Book.num));
 
 
 // let products = [

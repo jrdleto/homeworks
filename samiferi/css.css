@@ -1,0 +1,90 @@
+*{
+    margin: 0 auto;
+    padding:0;
+}
+
+.main{
+    max-width:  620px;
+    min-height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap:  5px;
+  
+ 
+
+}
+.first{
+    width: 200px;
+    height: 150px;
+    border: 1px solid brown;
+    box-sizing: border-box
+  
+}
+.firstA{
+    background: red;
+}
+.firstB{
+    background: yellow;
+}
+.firstC{
+    background: brown;
+}
+.second{
+    width: 200px;
+    height: 150px;
+    border: 1px solid brown;
+    box-sizing: border-box
+}
+.secondA{
+  background: darkcyan;
+}
+.secondB{
+ background: black;
+}
+.secondC{
+    background: blue;
+}
+.third{
+    width: 200px;
+    height: 150px;
+    border: 1px solid brown;
+    box-sizing: border-box
+}
+.thirdA{
+    background: darkgoldenrod;
+}
+.thirdB{
+    background: rebeccapurple;
+}
+.thirdC{
+    background: lawngreen;
+}
+.button{
+    display:flex;
+}
+.result{
+    max-width:  620px;
+    min-height: auto;
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    
+}
+.one{
+    background: black;
+    width: 200px;
+    height:150px
+}
+.two{
+    background: black;
+    width: 200px;
+    height:150px
+}
+
+.three{
+ background: black;
+ width: 200px;
+    height:150px
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS 101</title>
+</head>
+<body>
+    <div>Hello DOM</div>
+      <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+      </ul>
+    
+    <!--
+    Note. გამოიყენეთ console.log
+    1)  უნდა ავირჩიოთ div 
+    2)  ვბეჭდავთ ul
+    3)  დავბეჭდოთ (item2)
+    -->
+    <script>
+    let childNodes = document.body.childNodes;
+    // childNodes.forEach(function(element)) => {
+    //     if(el.nodeName.toLowerCase() === "div"){
+    //         console.log(el.nodeName);
+    //     }
+    // } 
+    childNodes.forEach(function(el) {
+        if(el.nodeName.toLowerCase() === "div"){
+            console.log(el.nodeName);
+        }
+     });
+     childNodes.forEach(function(el){
+         if(el.nodeName.toLowerCase() === "ul"){
+             console.log(el.nodeName);
+         }
+     })
+     childNodes.forEach(function(el){
+            if(el.nodeName.toLocaleLowerCase() === "ul"){
+             console.log(el.getElementsByTagName("LI")[1].innerHTML);
+         }
+     })
+
+    </script>
+    <!-- <script src="js.js"></script> -->
+</body>
+</html>

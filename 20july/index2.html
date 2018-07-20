@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin: 0 auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat( 6, auto)
+}
+.container > div{
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+}
+</style>
+<body>
+        <div class="container">
+        </div>
+        <script>
+      
+         
+            // if(el.nodeName.toLocaleLowerCase() === "div"){
+            //  (el.getElementsByTagName("ul")[2].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[3].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[8].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[9].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[12].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[13].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[14].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[15].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[16].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[17].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[18].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[19].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[20].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[21].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[22].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[23].style.backgroundColor = "blue");
+            //  (el.getElementsByTagName("ul")[26].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[27].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[32].style.backgroundColor = "red");
+            //  (el.getElementsByTagName("ul")[33].style.backgroundColor = "red");
+           function add(){
+             let deda = document.getElementsByClassName("container");
+             for(let i = 0; i < 6; i++){
+              for(let j = 0; j < 6; j++){
+                let element = document.createElement("div");
+                if( j == 2 || j == 3){
+                    element.style.backgroundColor = "red";
+                }
+                if( i == 2 && j == 3){
+                    element.style.backgroundColor = "black"
+                }
+             
+                
+                 deda[0].appendChild(element);
+                 console.log(element)
+              }
+            
+          
+         }
+        }
+        add();
+       </script>
+</body>
+</html>
