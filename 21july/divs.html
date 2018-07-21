@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body > div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+
+    }
+    </style>
+    <input type="text" id="fontsize" data-change="result"></input>
+    <input type="text" id="fontcolor" data-change="result"></input>
+    <input type="text" id="textposition" data-change="result"></input>
+    <input type="text" name="divid" id="divid" data-change="result"></input>
+
+ <button onclick="change()"     id="add">ADD</button>
+    <div id="first">first</div>
+    <div id="second">second</div>
+    <div id="third">third</div>
+    <div id="fourth">fourth</div>
+    <script>
+    function change(){
+        if(divid.value == "first"){
+
+          document.getElementById("first").style.color = fontcolor.value;  
+          document.getElementById("first").style.fontSize = fontsize.value;  
+          document.getElementById("first").style.textAlign = textposition.value;
+    }
+    else if(divid.value == "second"){
+        document.getElementById("second").style.color = fontcolor.value;  
+          document.getElementById("second").style.fontSize = fontsize.value;  
+          document.getElementById("second").style.textAlign = textposition.value;
+    }
+    }
+    change();
+    </script>
+</body>
+</html>

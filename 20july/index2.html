@@ -57,13 +57,19 @@ body{
              for(let i = 0; i < 6; i++){
               for(let j = 0; j < 6; j++){
                 let element = document.createElement("div");
+                
                 if( j == 2 || j == 3){
                     element.style.backgroundColor = "red";
                 }
-                if( i == 2 && j == 3){
-                    element.style.backgroundColor = "black"
+               if( i == 3 || i == 2){
+                   element.style.backgroundColor = "black";
+               }
+               if( i==2 && j == 3){
+                    element.style.backgroundColor = "red"
                 }
-             
+                if( i == 3 && j == 2){
+                    element.style.backgroundColor = "red"
+                }
                 
                  deda[0].appendChild(element);
                  console.log(element)
