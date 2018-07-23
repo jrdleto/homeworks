@@ -18,28 +18,39 @@
     <input type="text" id="fontsize" data-change="result"></input>
     <input type="text" id="fontcolor" data-change="result"></input>
     <input type="text" id="textposition" data-change="result"></input>
-    <input type="text" name="divid" id="divid" data-change="result"></input>
+    <input type="text"  id="divid" data-change="result"></input>
 
- <button onclick="change()"     id="add">ADD</button>
-    <div id="first">first</div>
-    <div id="second">second</div>
-    <div id="third">third</div>
-    <div id="fourth">fourth</div>
+ <button onclick="change1()"     id="add">ADD</button>
+    <div id="div1">first</div>
+    <div id="div2">second</div>
+    <div id="div3">third</div>
+    <div id="div4">fourth</div>
     <script>
-    function change(){
-        if(divid.value == "first"){
 
-          document.getElementById("first").style.color = fontcolor.value;  
-          document.getElementById("first").style.fontSize = fontsize.value;  
-          document.getElementById("first").style.textAlign = textposition.value;
+    function change1(){
+      for(let i = 0; i < 4; i++){
+         if(divid.value == `div${i}`){
+             document.getElementById(`div${i}`).style.color = fontcolor.value;
+             document.getElementById(`div${i}`).style.fontSize = fontsize.value;
+             document.getElementById(`div${i}`).style.textAlign = textposition.value;
+
+         } 
+      }
     }
-    else if(divid.value == "second"){
-        document.getElementById("second").style.color = fontcolor.value;  
-          document.getElementById("second").style.fontSize = fontsize.value;  
-          document.getElementById("second").style.textAlign = textposition.value;
-    }
-    }
-    change();
+
+    // function change(){
+    //     if(divid.value == "first"){
+
+    //       document.getElementById("first").style.color = fontcolor.value;  
+    //       document.getElementById("first").style.fontSize = fontsize.value;  
+    //       document.getElementById("first").style.textAlign = textposition.value;
+    // }
+    // else if(divid.value == "second"){
+    //     document.getElementById("second").style.color = fontcolor.value;  
+    //       document.getElementById("second").style.fontSize = fontsize.value;  
+    //       document.getElementById("second").style.textAlign = textposition.value;
+    // }
+    // }
     </script>
 </body>
 </html>
