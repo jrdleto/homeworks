@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+         padding: 10px;
+         border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+        <table id="calendar">
+                <!-- <tr>
+                  <th>SU</th>
+                  <th>MO</th>
+                  <th>TU</th>
+                  <th>WE</th>
+                  <th>Th</th>
+                  <th>FR</th>
+                  <th>SA</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td class="selected">14</td>
+                  <td>15</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                </tr> -->
+            </table>
+
+            <script>
+            function createCalendar(elem, year, month){
+              let date = new Date(year + '-' + month + '-01').getDay();
+              this.elem = document.getElementById("elem");
+              let arr = ["Su", "Mon", "Tue", "Wed", "Thu", "Fri", "Sa"]
+              let tr = document.createElement("tr");
+              elem.appendChild(tr);
+              for(let i = 0; i < arr.length; i++){
+                let th = document.createElement("th");
+
+                tr.appendChild(th);
+                th.textContent = arr[i];
+                
+              }
+            
+              
+            //   let arr1 = ["1", "2", "3", "4", "5", "6", "7"]
+            //   for(let i = 0; i < arr1.length; i++){
+            //       let td = document.createElement("td");
+            //     //   let td = document.setAttribute("id", "jigaro");
+            //       elem.appendChild(td);
+            //       td.textContent = arr1[i];
+            //   }
+              let j=1;
+              let td = document.createElement("td");
+            //   let kuku = document.getElementById("jigaro")
+              while(date !=  td.childElementCount) {
+                  td.children[date].innerHTML=j;
+                  j++;
+              }
+
+            }
+            
+            createCalendar(calendar, 2018, 6);
+            
+            </script>
+</body>
+</html>
