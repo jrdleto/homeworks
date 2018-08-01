@@ -22,24 +22,45 @@ getJson();
 
 let func = (async function(){
     //code
-
+ 
 })
 
 //Async funct declaration 
-async function myAsync(){
+// async function myAsync(){
     //code
-}
+// }
 
 // Async function Assignment 
-let myAsyncFunc = async function(){
+// let myAsyncFunc = async function(){
     //code
-}
+// }
 
 // Arrow Functoin
-let myAsyncFunc = async () => {
+// let myAsyncFunc = async () => {
     //Code
-}
+// }
 
 // element.addEventListener('click', async function(event) {});
  
-// Object & Class 
+// Object & Class methods
+
+let myObject = {
+    async method(){
+     //code
+    }
+}
+
+class MyClass {
+    async method(){
+        //code
+    }
+}
+
+async function funcPromisedAll(){
+    let [first,second] = await Promise.all(getJson(), getJson2());
+    await first;
+    await second;
+    console.log(first);
+    console.log(second);
+}
+funcPromisedAll();
