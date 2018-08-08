@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+       
+        padding: 0;
+    }
+    body{
+        max-width: 1200px;
+        display: flex;
+    }
+    .container{
+        margin: 0 auto;
+      
+    }
+    button{
+        padding: 10px;
+        margin-right: 20px;
+    }
+    #buttons{
+        display: block;
+        margin-top: 20px;
+        
+    }
+    .clear{
+        background: blue;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>შეიყვანე ტექსტი</h3>
+    <input type="text" id='text' name='test' value='write something'> 
+    <table id="result">
+        <thead>
+
+            <th>Char</th>
+            <th>Counted</th>
+        </thead>
+    </table>
+    <div id="buttons">  
+            <button class="count">Count</button>
+            <button class="clear">Clear</button>
+        </div>
+    </div>
+
+
+ <script>
+
+     window.onload = () =>{
+         let countOb = {};
+         let text = document.querySelector('#text');
+         let count = document.querySelector('.count');
+         let result = document.querySelector('#result');
+         
+         count.addEventListener('click',(event) =>{
+             let str = text.value;
+             str = str.replace(/^A-Za-z/g, '').toLowerCase().split('');
+             console.log(str);
+             str.forEach(element => {
+                 if( countOb[element]) {
+                     countOb[element] += 1;
+                 }
+                 else {
+                     countOb[element] = 1;  
+                 }
+             })
+             for( let prop in countOb){
+                 result.innerHTML += `<tr>
+                                       <td>${prop}</td>
+                                       <td>${countOb[prop]}</td> 
+                                       </tr>`
+             }
+         })
+     }
+
+//  let count = document.querySelector('.count');
+
+//  count.addEventListener('click', function(str){
+//      let letters = 0;
+//      let string = document.getElementById('string');
+    
+//      for (let i =0; i< string.value.length; i++){
+//          if (str[i] === string.value.split('')){
+//              letters = letters + str[i];
+//          }
+//      }
+//       console.log(letters);
+//  })
+
+//  let clear = document.querySelector('.clear');
+//  clear.addEventListener('click', function(){
+//     let string = document.getElementById('string');
+//     string.value = ''
+//  })
+ 
+ </script>   
+
+</body>
+</html>
