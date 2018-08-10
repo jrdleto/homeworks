@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="worker.js"></script> -->
+    <script>
+        
+    let worker = new Worker('worker.js');
+    worker.addEventListener('message', function(e){
+        console.log(e.data);
+
+    })
+
+    // worker.postMessage({
+    //     type: 'add',
+    //     num: [3,5]
+    // })
+
+    //  worker.postMessage({
+    //     type: 'sub',
+    //     num: [8,2]
+    // })
+    doLazy.addEventListener('click', function(e){
+        for(let i = 0; i < 100000000000; i++){
+
+        }
+    })
+    </script>
+</body>
+</html>
