@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+      <textarea name="" id="input" cols="60" rows="60">    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, rem quia voluptatum dicta, nisi, atque provident ex aperiam alias optio ipsa possimus nam quibusdam labore nobis sequi corrupti quidem cupiditate.
+            Eligendi sapiente ducimus, tenetur harum explicabo, maiores dolorem voluptatum quaerat amet mollitia reiciendis suscipit enim modi tempore rem. Ullam vitae quibusdam quaerat aliquam nisi, quod cupiditate architecto officia laboriosam odit.
+            Ipsum voluptatum quam cumque quos quo pariatur dolor suscipit rerum, explicabo asperiores iure accusamus et! Suscipit adipisci a doloremque cumque rerum repellat repellendus aspernatur doloribus dolores voluptatum. Vitae, tempore optio.
+            Vitae, aliquam. Ab quaerat blanditiis iure quo omnis quia, reprehenderit vel suscipit earum beatae nisi maiores repellendus sapiente soluta nesciunt consequatur possimus repudiandae provident similique, natus culpa sunt tempore necessitatibus!
+            Voluptatibus dolor veritatis corporis dolorem quos recusandae at. Doloremque deserunt exercitationem ad tempore quae. Repellendus, deserunt! Nam, pariatur mollitia aliquam, ad at dolores consequatur tempore sint dignissimos modi necessitatibus molestiae!
+            Mollitia perferendis quo explicabo optio eveniet enim officia molestiae iure non, voluptates ex dolore quod illum voluptatibus, quos asperiores vel assumenda, minus adipisci aspernatur! Quos cumque id velit molestiae dolores!
+            Dolor iste totam provident saepe deleniti, sadad 32 321 31421 21 213 21 3perferendis repudiandae? Omnis facere inventore enim in, et neque velit unde molestiae ex aperiam exercitationem labore voluptate dolore. Quae aliquam voluptatem vero alias voluptas?
+            Modi quisquam inventore, facere, aspernatur, earum distinctio unde quibusdam sint magnam quae quas nostrum itaque atque numquam voluptatibus minus fugiat iste illo reiciendis recusandae rem tempore aliquid. Voluptatibus, sapiente fugit?
+            Iusto sunt sequi in perspiciatis est autem ea nisi, explicabo odio a soluta? Quis, doloribus quibusdam praesentium natus ipsam, modi nulla fuga temporibus dolorem at sunt velit laborum aspernatur omnis!
+            Quisquam vel voluptates pariatur illum? Nobis commodi voluptatem amet, non nisi praesentium. Corrupti ducimus numquam nisi. Ipsum sunt modi alias voluptas aperiam consequatur blanditiis rem aliquid vero magnam, adipisci quis.
+      </textarea>
+    
+      <button id="count">Count</button>
+</body>
+<script>
+ let input = document.getElementById('input').textContent;
+ let count = document.getElementById('count');
+ count.addEventListener('click', function(){
+     
+    let words =  input.match(/\b[-?(\w+)?]+\b/gi);
+    words = words.length
+    //  console.log(words); 
+    let sentences = input.split(/[.|!|?]/g);
+    sentences = sentences.length;
+    let numbers = input.match(/\d/g)
+    numbers = numbers.length;
+    // console.log(sentences);
+    // console.log(numbers);
+    let letter = input.match(/[a-zA-Z]/g)
+    letter = letter.length
+    // console.log(letter);
+   console.log(`Words length is ${words} , Sentences length is ${sentences} , numbers length is ${numbers}`)
+   update();
+ })
+ function update(){
+    console.log(input)
+ }
+
+</script>
+</html>
